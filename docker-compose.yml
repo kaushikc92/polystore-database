@@ -1,0 +1,11 @@
+version: "3"
+
+networks:
+  psdb-net:
+    driver: bridge
+
+services:
+  ui:
+    image: docker.io/kaushikc92/psdb-ui:latest
+    ports:
+      - 80:80
